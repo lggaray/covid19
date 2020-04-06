@@ -13,6 +13,6 @@ The reason to use Logistic Growth for modeling the Coronavirus outbreak is that 
 - Upper range: ~1800
 - Expected stabilization period: by end of April
 
-Keep in mind this is a forecast, it is based on today's actual numbers, with next day data it can be adjusted. Black dots — actual data, blue line — forecast. Vertical black line — last day available with actual data. Horizontal black line — estimated top number of infections.
+> Keep in mind this is a forecast, it is based on today's actual numbers, with next day data it can be adjusted. Black dots — actual data, blue line — forecast. Vertical black line — last day available with actual data. Horizontal black line — estimated top number of infections.
 
 *Based on the Medium post:* https://towardsdatascience.com/covid-19-growth-modeling-and-forecasting-with-prophet-2ff5ebd00c01
