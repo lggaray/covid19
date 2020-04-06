@@ -1,5 +1,5 @@
 import requests
-from datatime import datetime
+from datetime import datetime
 import pandas as pd 
 
 def build_country_data(country):
@@ -10,7 +10,7 @@ def build_country_data(country):
 		target_entry['Report_Date'] = key
 		country_name = country.get('country')
 		if country.get('province') != None:
-			country_name = country_name + '_' = country.get('province')
+			country_name = country_name + '_' + country.get('province')
 		target_entry[country_name + '_cases'] = country.get('timeline').get('cases').get(key)
 		target_entry[country_name + '_deaths'] = country.get('timeline').get('deaths').get(key)
 		target_entry[country_name + '_recovered'] = country.get('timeline').get('recovered').get(key)
@@ -40,3 +40,5 @@ def build_covid19_data():
     
     df.to_csv('data/covid19_data.csv')
     return df
+
+build_covid19_data()

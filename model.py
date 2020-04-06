@@ -79,7 +79,7 @@ def detect_growth():
     df_c = pd.DataFrame(data=d)
     df_c.to_csv('data/covid19_stats_countries.csv')
 
-# detect_growth()
+#detect_growth()
 
 
 def build_model(country):
@@ -118,9 +118,10 @@ def build_model(country):
     plt.xlabel("Day", fontsize=20)
     plt.ylabel("Infections", fontsize=20)
     plt.axvline(datenow, color="k", linestyle=":")
-    plt.show()
+    #plt.show()
+    plt.savefig('Argentina_growth_forecast.png')
     
-    print(res_df[['ds', 'y', 'yhat', 'yhat_lower', 'yhat_upper', 'current_date', 'fastest_growth_day', 'growth_stabilized', 'current_day']].tail(30))
+    #print(res_df[['ds', 'y', 'yhat', 'yhat_lower', 'yhat_upper', 'current_date', 'fastest_growth_day', 'growth_stabilized', 'current_day']].tail(30))
     
 build_model('Argentina_cases')
 
@@ -133,4 +134,5 @@ def calculate_forecast():
             build_model(column)
     print('Forecast calculation completed')
     
-# calculate_forecast()
+
+#calculate_forecast()
