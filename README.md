@@ -10,9 +10,8 @@ The reason to use Logistic Growth for modeling the Coronavirus outbreak is that 
 
 ![](Argentina_growth_forecast.png)
 
-Upper range: ~1800
-
-Expected stabilization period: by end of April
+- Upper range: ~1800
+- Expected stabilization period: by end of April
 
 Keep in mind this is a forecast, it is based on today's actual numbers, with next day data it can be adjusted. Black dots — actual data, blue line — forecast. Vertical black line — last day available with actual data. Horizontal black line — estimated top number of infections.
 
